@@ -1,12 +1,11 @@
 from fastmcp import FastMCP
 import os
 import sqlite3
-from fastmcp.server.auth import NoAuth
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "expenses.db")
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
-mcp = FastMCP("ExpenseTracker" , auth=NoAuth())
+mcp = FastMCP("ExpenseTracker")
 
 def init_db():
     with sqlite3.connect(DB_PATH) as c:
