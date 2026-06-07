@@ -1,0 +1,7 @@
+[1] uv init .
+[2] uv add fastmcp
+[3] fastmcp run main.py --transport http --host 0.0.0.0 --port 8000
+    uv run main.py
+[4] npx @modelcontextprotocol/inspector
+    http://localhost:8000/mcp
+[5] make new repo in github
